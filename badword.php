@@ -16,10 +16,11 @@ $badword = $_GET["badword"]
 
 <body>
     <p>Testo Originale: <?php echo $text ?> </p>
-    
+    <p>lunghezza testo: <?php echo strlen($text); ?></p>
     <br>
     <?php $new_string = str_replace( $badword, "***", $text);?> 
     <p>Testo Censurato: <?php echo $new_string ?> </p>
+    <p>lunghezza testo: <?php echo strlen($new_string); ?></p>
     
     <a href="index.php">Ritorna alla home</a>
 </body>
